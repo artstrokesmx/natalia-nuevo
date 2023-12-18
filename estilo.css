@@ -2,25 +2,286 @@
 
 *{
     box-sizing: border-box;
-    margin: 0;
-    border: 0;
+    font-size: 62.5%;
 }
 html{
-    font-size: 62.5%;
-    background-color: aliceblue;
     font-family: 'Dancing Script', cursive;
-    text-align: center;
-    color: darksalmon;
+    color: salmon;
+
+}
+body{
+    margin: 0;
+    border: 0;
+    background: linear-gradient(217deg, #eaf3f7, rgba(12, 12, 12, 0) 70.71%),
+                linear-gradient(127deg, #EEEDED, rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, #faf3f0, rgba(0,0,255,0) 70.71%);
+    
+}
+@keyframes movimiento {
+    0%{top: 50%;
+    }
+    25%{
+        top: 0%;
+        left: 10%;
+        width: 10px;
+    }
+    50%{
+        right: 90%;
+        width: 70px;
+    }
+    100%{
+        top: 100%;
+    }
+}
+@keyframes movimientod {
+    0%{top: 0%;
+    }
+    50%{
+        left: 0%;
+        width: 70px;
+    }
+    100%{
+        top: 100%;
+    }
+}
+@keyframes movimientoi {
+    0%{top: 0%;
+    }
+    50%{
+        left: 100%;
+        width: 100px;
+    }
+    100%{
+        top: 90%;
+    }
+}
+
+.pelotita{
+    position: absolute;
+width: 50px;
+aspect-ratio: 1/1;
+border-radius: 50%;
+background: radial-gradient(#fff, #cacaca);
+box-shadow:  5px 5px 6px #9d9d9d,
+     -5px -5px 6px #ffffff;
+}
+.p1{
+    
+    left: 1%;
+    animation: movimientoi 26s linear 0s infinite alternate;
+}
+.p2{
+
+    left: 10%;
+    animation: movimientoi 27s linear 0s infinite alternate-reverse;
+}
+.p3{
+
+    left: 20%;
+    animation: movimientoi 18s linear 0s infinite alternate;
+}
+.p4{
+    left: 30%;
+    animation: movimiento 29s linear 0s infinite alternate-reverse;
+}
+.p5{
+   left: 40%;
+    animation: movimiento 20s linear 0s infinite alternate;
+}
+.p6{
+    left: 50%;
+    animation: movimientoi 21s linear 0s infinite alternate-reverse;
+}
+.p7{
+    left: 60%;
+    animation: movimientod 22s linear 0s infinite alternate;
+}
+.p8{
+    left: 70%;
+    animation: movimiento 24s linear 0s infinite alternate-reverse;
+}
+.p9{
+    left: 80%;
+    animation: movimientod 25s linear 0s infinite alternate;
+}
+.p10{
+    left: 90%;
+    animation: movimientod 26s linear 0s infinite alternate-reverse;
+}
+.contenido{
+    position: relative;
+    margin: 0px 5px;
+}
+main{
+    position: relative;
+    margin-top: 0;
+    overflow-x: hidden;
 }
 h1{
-    font-size: 2.8rem;
+    font-size: 3.2rem;
+    text-align: center;
+    margin-top: 15px;
 }
 h2{
-    font-size: 2.4rem;
+    font-size: 2.8rem;
+    text-align: center;
+    letter-spacing: .3rem;
 }
 h3{
-    font-size: 2rem;
+    font-size: 2.4rem;
+    text-align: center;
+}
+h4{font-size: 2rem;
+    text-align: center;
+}
+h5{
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
 }
 p{
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.8rem;
+    letter-spacing: 2px;
+}
+.fotoinicio{
+    display: flex;
+    justify-content: center;
+    margin:0px 0px 20px 0px;
+}
+.fotoinicio img{
+    width: 80vw;
+    aspect-ratio: 1/1;
+    border: 10px #ffffff solid;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  8px 8px 15px #9d9d9d,
+             -8px -8px 15px #ffffff;
+}
+.papas{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.papas img{
+    width: 50vw;
+    aspect-ratio: 1/1;
+    margin: 5px auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 10px #ffffff solid;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  8px 8px 15px #9d9d9d,
+             -8px -8px 15px #ffffff;
+}
+.padrinos{
+    display: flex;
+    justify-content: space-around;
+}
+.padrinos img{
+        width: 30vw;
+        aspect-ratio: 1/1;
+        margin: 5px auto;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 10px #ffffff solid;
+        background: linear-gradient(145deg, #f0f0f0, #cacaca);
+        box-shadow:  8px 8px 15px #9d9d9d,
+                 -8px -8px 15px #ffffff;
+        display: flex;
+        gap: 15px;
+}
+.madrina, .padrino{
+    width: 50vw;
+    justify-content: center;
+}
+.ubicaciones{
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
+}
+.mapa{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-between;
+}
+iframe{
+    width: 40vw;
+    aspect-ratio: 1/1;
+    margin: 10px auto;
+    border: 0;
+    border-radius: 15px;
+background: linear-gradient(145deg, #f0f0f0, #cacaca);
+box-shadow:  8px 8px 15px #9d9d9d,
+             -8px -8px 15px #ffffff;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+.asistenciabot{
+    font-size: 2rem;
+    width: 50vw;
+    aspect-ratio: 2/1;
+    margin-top: 10px;
+    border-radius: 15px;
+    border: 0;
+background: linear-gradient(145deg, #f0f0f0, #cacaca);
+box-shadow:  8px 8px 15px #9d9d9d,
+             -8px -8px 15px #ffffff;
+}
+.mesa{
+    display: flex;
+    width: 60vw;
+    height: 50px;
+    margin: 10px auto;
+    border-radius: 15px;
+    border: 0;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  8px 8px 15px #9d9d9d,
+             -8px -8px 15px #ffffff;
+}
+.mesa a{
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+    color: #9d9d9d;
+}
+.caja{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+.reloj{
+    width: 80px;
+aspect-ratio: 1/1;
+border-radius: 50%;
+background: radial-gradient(#fff, #cacaca);
+box-shadow:  5px 5px 6px #9d9d9d,
+     -5px -5px 6px #ffffff;
+}
+.reloj h3{
     font-size: 1.6rem;
+}
+.reloj p{
+    font-size: 2rem;
+    
+
+}
+.return{
+    justify-content: center;
+    display: flex;
+}
+.return a{
+    font-size: 2rem;
+    color: black;
+
 }
