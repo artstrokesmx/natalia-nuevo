@@ -14,7 +14,7 @@ body{
     border: 0;
     background: linear-gradient(217deg, #eaf3f7, rgba(12, 12, 12, 0) 70.71%),
                 linear-gradient(127deg, #EEEDED, rgba(0,255,0,0) 70.71%),
-                linear-gradient(336deg, #faf3f0, rgba(0,0,255,0) 70.71%);
+                linear-gradient(336deg, #e0f6fd, rgba(0,0,255,0) 70.71%);
     
 }
 @keyframes movimiento {
@@ -28,9 +28,11 @@ body{
     50%{
         right: 90%;
         width: 70px;
+        background: radial-gradient(#fa934f, #cacaca);
     }
     100%{
         top: 100%;
+        background: radial-gradient(#ff9292, #cacaca);
     }
 }
 @keyframes movimientod {
@@ -39,9 +41,11 @@ body{
     50%{
         left: 0%;
         width: 70px;
+        background: radial-gradient(#ff9292, #cacaca);
     }
     100%{
         top: 100%;
+        background: radial-gradient(#fa934f, #cacaca);
     }
 }
 @keyframes movimientoi {
@@ -50,9 +54,11 @@ body{
     50%{
         left: 100%;
         width: 100px;
+        background: radial-gradient(#e0fff0, #cacaca);
     }
     100%{
         top: 90%;
+        background: radial-gradient(#ffb5ef, #cacaca);
     }
 }
 
