@@ -28,11 +28,9 @@ body{
     50%{
         right: 90%;
         width: 70px;
-        background: radial-gradient(#fa934f, #cacaca);
     }
     100%{
         top: 100%;
-        background: radial-gradient(#ff9292, #cacaca);
     }
 }
 @keyframes movimientod {
@@ -41,11 +39,9 @@ body{
     50%{
         left: 0%;
         width: 70px;
-        background: radial-gradient(#ff9292, #cacaca);
     }
     100%{
         top: 100%;
-        background: radial-gradient(#fa934f, #cacaca);
     }
 }
 @keyframes movimientoi {
@@ -54,63 +50,56 @@ body{
     50%{
         left: 100%;
         width: 100px;
-        background: radial-gradient(#e0fff0, #cacaca);
     }
     100%{
         top: 90%;
-        background: radial-gradient(#ffb5ef, #cacaca);
     }
 }
 
-.pelotita{
+.flor img{
     position: absolute;
-width: 50px;
-aspect-ratio: 1/1;
-border-radius: 50%;
-background: radial-gradient(#fff, #cacaca);
-box-shadow:  5px 5px 6px #9d9d9d,
-     -5px -5px 6px #ffffff;
+    width: 150px;
 }
-.p1{
+.p1 img{
     
     left: 1%;
-    animation: movimientoi 26s linear 0s infinite alternate;
+    animation: movimientoi 26s linear 2s infinite alternate;
 }
-.p2{
-
+.p2 img{
+    width: 150px;
     left: 10%;
-    animation: movimientoi 27s linear 0s infinite alternate-reverse;
+    animation: movimientoi 27s linear 3s infinite alternate-reverse;
 }
-.p3{
+.p3 img{
 
     left: 20%;
-    animation: movimientoi 18s linear 0s infinite alternate;
+    animation: movimientoi 18s linear 5s infinite alternate;
 }
-.p4{
+.p4 img{
     left: 30%;
-    animation: movimiento 29s linear 0s infinite alternate-reverse;
+    animation: movimiento 29s linear 1s infinite alternate-reverse;
 }
-.p5{
+.p5 img{
    left: 40%;
     animation: movimiento 20s linear 0s infinite alternate;
 }
-.p6{
+.p6 img{
     left: 50%;
     animation: movimientoi 21s linear 0s infinite alternate-reverse;
 }
-.p7{
+.p7 img{
     left: 60%;
     animation: movimientod 22s linear 0s infinite alternate;
 }
-.p8{
+.p8 img{
     left: 70%;
     animation: movimiento 24s linear 0s infinite alternate-reverse;
 }
-.p9{
+.p9 img{
     left: 80%;
     animation: movimientod 25s linear 0s infinite alternate;
 }
-.p10{
+.p10 img{
     left: 90%;
     animation: movimientod 26s linear 0s infinite alternate-reverse;
 }
