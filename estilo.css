@@ -190,7 +190,6 @@ p{
              -8px -8px 15px #ffffff;
 }
 .padrinos{
-    display: flex;
     justify-content: space-around;
 }
 .padrinos img{
@@ -207,11 +206,10 @@ p{
         gap: 15px;
 }
 .madrina, .padrino{
-    width: 50vw;
+    width: 80vw;
     justify-content: center;
 }
 .ubicaciones{
-    display: flex;
     gap: 5vw;
     justify-content: center;
 }
@@ -222,7 +220,7 @@ p{
     align-content: space-between;
 }
 iframe{
-    width: 40vw;
+    width: 80vw;
     aspect-ratio: 1/1;
     margin: 10px auto;
     border: 0;
