@@ -61,29 +61,33 @@ body{
     width: 150px;
 }
 .p1 img{
-    
+    top: 1%;
     left: 1%;
-    animation: movimientoi 26s linear 2s infinite alternate;
+    animation: movimientoi 26s linear 0s infinite alternate;
 }
 .p2 img{
     width: 150px;
     left: 10%;
-    animation: movimientoi 27s linear 3s infinite alternate-reverse;
+    top: 15%;
+    animation: movimientoi 27s linear 0s infinite alternate-reverse;
 }
 .p3 img{
-
+    top: 45%;
     left: 20%;
-    animation: movimientoi 18s linear 5s infinite alternate;
+    animation: movimientoi 18s linear 0s infinite alternate;
 }
 .p4 img{
+    top: 65%;
     left: 30%;
     animation: movimiento 29s linear 1s infinite alternate-reverse;
 }
 .p5 img{
+    top: 35%;
    left: 40%;
     animation: movimiento 20s linear 0s infinite alternate;
 }
 .p6 img{
+    top: 55%;
     left: 50%;
     animation: movimientoi 21s linear 0s infinite alternate-reverse;
 }
