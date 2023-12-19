@@ -21,37 +21,45 @@ body{
     0%{top: 50%;
     }
     25%{
-        top: 0%;
+        transform: rotate(45deg);
         left: 10%;
         width: 10px;
     }
     50%{
+        transform: rotate(90deg);
         right: 90%;
         width: 70px;
     }
     100%{
+        transform: rotate(260deg);
         top: 100%;
+        width: 30px;
     }
 }
 @keyframes movimientod {
-    0%{top: 0%;
+    0%{top: 10%;
     }
     50%{
+        transform: rotate(-360deg);
         left: 0%;
         width: 70px;
     }
     100%{
+        transform: rotate(-90deg);
         top: 100%;
     }
 }
 @keyframes movimientoi {
-    0%{top: 0%;
+    0%{top: -10%;
+        transform: rotate(45deg);
     }
     50%{
+        transform: rotate(90deg);
         left: 100%;
         width: 100px;
     }
     100%{
+        transform: rotate(180deg);
         top: 90%;
     }
 }
@@ -74,7 +82,7 @@ body{
 .p3 img{
     top: 45%;
     left: 20%;
-    animation: movimientoi 18s linear 0s infinite alternate;
+    animation: movimientoi 20s linear 0s infinite alternate;
 }
 .p4 img{
     top: 65%;
@@ -84,7 +92,7 @@ body{
 .p5 img{
     top: 35%;
    left: 40%;
-    animation: movimiento 20s linear 0s infinite alternate;
+    animation: movimiento 23s linear 0s infinite alternate;
 }
 .p6 img{
     top: 55%;
@@ -96,14 +104,17 @@ body{
     animation: movimientod 22s linear 0s infinite alternate;
 }
 .p8 img{
+    top: 75%;
     left: 70%;
     animation: movimiento 24s linear 0s infinite alternate-reverse;
 }
 .p9 img{
+    top: 95%;
     left: 80%;
     animation: movimientod 25s linear 0s infinite alternate;
 }
 .p10 img{
+    top: 27%;
     left: 90%;
     animation: movimientod 26s linear 0s infinite alternate-reverse;
 }
