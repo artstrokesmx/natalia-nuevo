@@ -12,8 +12,8 @@ html{
 body{
     margin: 0;
     border: 0;
-    background: linear-gradient(217deg, #eaf3f7, rgba(12, 12, 12, 0) 70.71%),
-                linear-gradient(127deg, #EEEDED, rgba(0,255,0,0) 70.71%),
+    background: linear-gradient(217deg, #a7e0f8, rgba(12, 12, 12, 0) 70.71%),
+                linear-gradient(127deg, #94b4ce, rgba(0,255,0,0) 70.71%),
                 linear-gradient(336deg, #e0f6fd, rgba(0,0,255,0) 70.71%);
     
 }
@@ -40,26 +40,26 @@ body{
     0%{top: 10%;
     }
     50%{
-        transform: rotate(-360deg);
+        transform: rotate(90deg);
         left: 0%;
         width: 70px;
     }
     100%{
-        transform: rotate(-90deg);
+        transform: rotate(210deg);
         top: 100%;
     }
 }
 @keyframes movimientoi {
     0%{top: -10%;
-        transform: rotate(45deg);
+        transform: rotate(75deg);
     }
     50%{
-        transform: rotate(90deg);
+        transform: rotate(155deg);
         left: 100%;
         width: 100px;
     }
     100%{
-        transform: rotate(180deg);
+        transform: rotate(355deg);
         top: 90%;
     }
 }
@@ -100,8 +100,8 @@ body{
     animation: movimientoi 21s linear 0s infinite alternate-reverse;
 }
 .p7 img{
-    left: 60%;
-    animation: movimientod 22s linear 0s infinite alternate;
+    left: 30%;
+    animation: movimientod 22s linear 0s infinite alternate-reverse;
 }
 .p8 img{
     top: 75%;
@@ -110,7 +110,7 @@ body{
 }
 .p9 img{
     top: 95%;
-    left: 80%;
+    left: 20%;
     animation: movimientod 25s linear 0s infinite alternate;
 }
 .p10 img{
@@ -294,4 +294,10 @@ box-shadow:  5px 5px 6px #9d9d9d,
     font-size: 2rem;
     color: black;
 
+}
+.linead{
+    width: 90vw;
+    height: 1px;
+    border: salmon 1px solid;
+    border-radius: 50%;
 }
